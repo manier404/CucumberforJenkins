@@ -1,4 +1,4 @@
-package feature;
+package stepDefinition;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
