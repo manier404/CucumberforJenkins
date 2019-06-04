@@ -14,7 +14,6 @@ public class BillingPage {
 
 	@Then("The user should see the Total Bill")
 	public void the_user_should_see_the_Total_Bill() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    
 	}
 }
