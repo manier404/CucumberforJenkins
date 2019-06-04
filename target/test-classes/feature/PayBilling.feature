@@ -1,27 +1,20 @@
 
-@tag
+@Regression
 Feature: PayBilling
  
 Background: 
     Given The User  in telecome home page
-    And The User click the AddTariffPlanToCustomer
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+    And The User click the PayBilling
+  
 
   @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  Scenario Outline: Link the customerid
+    When The User Enter the CustomerID "<Enter_Your_Customer_ID>"
+    And The user will click the submit button
+   
+    Then The user should see the Total Bill
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+     Examples: 
+      | Enter_Your_Customer_ID |
+      |                 254647 |
+      |                 992035 |
