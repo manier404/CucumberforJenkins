@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Feature/", monochrome = true, tags = {
-		"@Regression,@Smoke" }, glue = "feature",dryRun=false, plugin = { "json:src/test/java/report.json",
+		"@Regression,@Smoke" }, glue = "feature",dryRun=false, plugin = { "json:src/test/java/	",
 				"html:target" })
 public class TestRunner {
 
